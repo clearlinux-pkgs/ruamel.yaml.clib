@@ -4,7 +4,7 @@
 #
 Name     : ruamel.yaml.clib
 Version  : 0.2.0
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/92/28/612085de3fae9f82d62d80255d9f4cf05b1b341db1e180adcf28c1bf748d/ruamel.yaml.clib-0.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/92/28/612085de3fae9f82d62d80255d9f4cf05b1b341db1e180adcf28c1bf748d/ruamel.yaml.clib-0.2.0.tar.gz
 Summary  : C version of reader, parser and emitter for ruamel.yaml derived from libyaml
@@ -19,28 +19,9 @@ BuildRequires : ruamel.yaml
 
 %description
 ruamel.yaml.clib
-================
-
-``ruamel.yaml.clib`` is the C based reader/scanner and emitter for ruamel.yaml
-
-:version:       0.2.0
-:updated:       2019-09-26
-:documentation: http://yaml.readthedocs.io
-:repository:    https://bitbucket.org/ruamel/yaml.clib
-:pypi:          https://pypi.org/project/ruamel.yaml.clib/
-
-This package was split of from ruamel.yaml, so that ruamel.yaml can be build as  
-a universal wheel. Apart from the C code seldom changing, and taking a long
-time to compile for all platforms, this allows installation of the .so
-on Linux systems under /usr/lib64/pythonX.Y (without a .pth file or a ruamel 
-directory) and the Python code for ruamel.yaml under /usr/lib/pythonX.Y.
-
-
-.. image:: https://bestpractices.coreinfrastructure.org/projects/1128/badge
-   :target: https://bestpractices.coreinfrastructure.org/projects/1128
-
-.. image:: https://bitbucket.org/ruamel/yaml/raw/default/_doc/_static/license.svg
-   :target: https://opensource.org/licenses/MIT
+        ================
+        
+        ``ruamel.yaml.clib`` is the C based reader/scanner and emitter for ruamel.yaml
 
 %package license
 Summary: license components for the ruamel.yaml.clib package.
@@ -78,15 +59,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583221371
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1603403860
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
