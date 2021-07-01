@@ -4,7 +4,7 @@
 #
 Name     : ruamel.yaml.clib
 Version  : 0.2.4
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/b7/81/c04fb9be62657d4dce8aa2d99fde258a3af1cd77ec72af525593e9560127/ruamel.yaml.clib-0.2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b7/81/c04fb9be62657d4dce8aa2d99fde258a3af1cd77ec72af525593e9560127/ruamel.yaml.clib-0.2.4.tar.gz
 Summary  : C version of reader, parser and emitter for ruamel.yaml derived from libyaml
